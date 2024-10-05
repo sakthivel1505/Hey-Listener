@@ -21,7 +21,7 @@ header{
 nav{
     display: flex;
 }
-nav>a{
+nav>a, #Contact a{
     margin-right: 20px;
     text-decoration: none;
     font-size: 20px;
@@ -150,4 +150,35 @@ main{
     border-radius: 10%;
     box-shadow: 1px 1px 5px;
  }
- 
+ footer{
+    background-color: #FFBF23;
+    height: 450px;
+ }
+ #Contact{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 50px; 
+    flex-wrap: wrap;
+ }
+ #s1{
+    width: 33.3%;
+ }
+ #Contact h1,h2{
+    margin-bottom: 20px;
+ }
+ address{
+    margin-bottom: 25px;
+    text-indent: 10px;
+ }
+ footer #logo{
+    padding-top: 50px;
+ }
+ footer p{
+    line-height: 25px;
+    text-indent: 10px;
+ }
+ footer a{
+    margin-left: 10px;
+ }
