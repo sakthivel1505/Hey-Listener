@@ -1,0 +1,52 @@
+@media screen and (max-width: 410px) {
+    .nav{
+        position: absolute;
+        visibility: hidden;        
+    }
+    .start{
+        margin-top: 35px;
+        margin-left: 7px;
+        width: 135px;
+    }
+    [alt="Learn Japanese"] {
+        width: 224px;
+    }
+    #intro h1{
+        font-size: 40px;
+    }
+    #intro>figcaption{
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    #clip {
+        height: 1000px; /* Further increase height on very small screens */
+        clip-path: polygon(0 0, 30% 6%, 59% 9%, 100% 11%, 100% 100%, 0 100%);
+    }
+    #cliped{
+        display: inline;
+    }
+    #cliped p{
+        width: 90%;
+        margin-top: 50px;
+        padding: 20px;
+    } 
+    #cliped h1{
+        width: 90%;
+        padding: 20px;        
+    }
+    #trans{
+        margin-right: 50px;
+    }
+    #q_container{
+        margin-bottom: 250px;;
+    }
+    #q_container>h1{
+        padding-right: 40px;
+    }
+    .form img{
+        width: 224px;
+    }
+    .form p{
+        margin-bottom: 50px;
+    }
+ }
