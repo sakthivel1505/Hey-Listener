@@ -1,142 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hey, Listener</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/logo.gif" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.gif" type="image/x-icon" />
+    <link rel="stylesheet" href="mobile.css">
+  </head>
+  <body>
+    <!--header-->
     <header>
-        <div id="logo">
-            <figure>
-                <img src="images/logo.gif" alt="listening" width="50px">
-                <figcaption>
-                    <h1>Hey, Listener</h1>
-                    <p>Just Listen Bro</p>
-                </figcaption>
-            </figure>
-        </div>
-        <nav>
-            <a href="#" class="li" id="home">Home</a>
-            <a href="#" class="li">Grammar</a>
-            <a href="#" class="li">Contact</a>
-            <div class="start"><a href="#">Get Started</a></div>
-        </nav>
+       <!--Logo-->
+      <div id="logo">
+        <figure>
+          <img src="images/logo.gif" alt="listening" width="50px" />
+        </figure>
+        <figcaption>
+          <h1>Hey, Listener</h1>
+          <p>Just Listen Bro</p>
+        </figcaption>
+      </div>
+      <!--Navigaition Links-->
+      <nav>
+        <a href="#"  class="nav">Home</a>
+        <a href="#" class="nav">Grammar</a>
+        <a href="#"  class="nav">Contact</a>
+        <!--Get start button on the header-->
+        <div class="start"><a href="#">Get Started</a></div>
+      </nav>
     </header>
     <main>
-       <section id="intro">
-         <figcaption style="margin-top: 70px;" id="Intro_content">
-            <h1 style="font-size: 50px; margin-bottom: 25px;">Just Listen Bro</h1>
-            <p style="font-size: 20px;">Hey, Listener provides a new way to learn Japanese.<br>
-            Here you can strengthen your listening skills.</p>
-            <div class="start" id="st"><a href="#">Get Started</a></div>
-            <div id="feature">
-                <figure><img src="images/headphone.png" alt="headphone" width="50px"></figure>
-                <figcaption>It enhances your <br> Listening Skills</figcaption>
-                <figure><img src="images/translate.png" alt="translate" width="60px"></figure>
-                <figcaption>It converts English <br> words to Japanese</figcaption>
-            </div>
-         </figcaption>
-         <figure>
-           <picture>
-            <source media="(min-width:1118px)" srcset="images/learnJapanes.jpg">
-            <source media="(min-width:912px)" srcset="images/learnJapanes1.jpg">
-            <img src="images/learnJapanes2.jpg" alt="Learn Japanese">
-           </picture>
-         </figure>
-       </section>
-       <div class="wave-clip-path">
-        <div class="content">
-            <section style="font-size: 40px;">
-                Continuous practice with the right person leads to greater
-                achievements. </section>
-            <p style="font-size: 18px;">
-                This website provides an interactive user experience that helps 
-                Japanese language learners improve their listening skills 
-                by offering audio-based practice of verb conjugations. 
-                By focusing on auditory repetition of different verb forms,
-                it enhances users' ability to recognize and understand 
-                conjugated verbs in real-life conversations and exams, 
-                making language acquisition more effective and engaging.
-            </p>
+       <!--Welcome box-->
+      <section  id="intro">
+        <figcaption >
+          <h1>Just Listen Bro</h1>
+          <p id="sub">
+            &nbsp; Hey, Listener provides a new way to learn Japanese.<br />
+            &nbsp; Here you can strengthen your listening skills.
+          </p>
+          <!--Get start button on the header-->
+          <div id="start1" ><a href="#">Get Started</a></div>
+          <div id="feature">
+            <section>
+                <figure>
+                    <img src="images/headphone.png" alt="headphone" width="50px" />
+                </figure>
+                <figcaption>
+                    It enhances your <br />
+                    Listening Skills
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="images/translate.png" alt="translate" width="60px" />
+                </figure>
+                <figcaption id="trans">
+                    It converts English <br />
+                    words to Japanese
+                </figcaption>
+            </section>  
+          </div>
+        </figcaption>
+        <!--Learn Japanes Photo-->
+        <figure>
+          <picture>
+            <source media="(min-width:1118px)" srcset="images/learnJapanes.jpg"/>
+            <source media="(min-width:912px)" srcset="images/learnJapanes1.jpg"/>
+            <img src="images/learnJapanes2.jpg" alt="Learn Japanese" />
+          </picture>
+        </figure>
+      </section>
+       <!--Clip path container-->
+      <div  id="clip">
+         <!--content presents inside the container-->
+        <div id="cliped" >
+          <h1 >
+            Continuous practice with the right person leads to greater
+            achievements.
+          </h1>
+          <p >
+            This website provides an interactive user experience that helps
+            Japanese language learners improve their listening skills by
+            offering audio-based practice of verb conjugations. By focusing on
+            auditory repetition of different verb forms, it enhances users'
+            ability to recognize and understand conjugated verbs in real-life
+            conversations and exams, making language acquisition more effective
+            and engaging.
+          </p>
         </div>
-       </div>
-       <section id="q_container">
+      </div>
+      <!--What are the form are available-->
+      <section id="q_container">
         <h1>What are the forms available?</h1>
-        <p>This site is fully dedicated to the N5 Examination. This site will help you strengthen 
-            your listening skills with audio sessions. The N5 Examination contains 6-verb forms.
-            Here you can master these 6-verb forms  through continuous hearing practice. 
-            By listening to the 6 forms of the verb repeatedly, you can enhance your listening 
-            comprehension skills. So we request you to be patient and stay connected.
+        <p>
+          This site is fully dedicated to the N5 Examination. This site will
+          help you strengthen your listening skills with audio sessions. The N5
+          Examination contains 6-verb forms. Here you can master these 6-verb
+          forms through continuous hearing practice. By listening to the 6 forms
+          of the verb repeatedly, you can enhance your listening comprehension
+          skills. So we request you to be patient and stay connected.
         </p>
-       </section>
-       <div >
+      </section>
+      <!--6 form conatainer-->
+      <div>
+        <!--first 3 line of the form-->
         <section class="form">
-            <div>
-                <figure><img src="images/jisho.png" alt="jisho"></figure>
-                <figcaption>
-                    <h1>じしょ けい</h1>
-                    <p>The じしょ form (辞書形, jisho-kei), also known as the dictionary form, is the basic,
-                         non-conjugated form of a verb in Japanese. It is called the dictionary form because
-                         it is how verbs are listed in dictionaries. This form is neutral and can be used in
-                         casual speech, typically in informal situations with friends, family, or peers</p>
-                </figcaption>
-            </div>
-            <div>
-                <figure><img src="images/nai.png" alt=""></figure>
-                <figcaption>
-                    <h1>ない けい</h1>
-                    <p>The ない form (ない形, nai-kei) is the negative form of a verb in Japanese, used to express
-                         the idea of "not doing" something or the absence of an action. It’s an informal way to
-                          negate a verb and is often used in casual conversation or when forming other grammatical
-                           structures, such as commands, prohibitions, or expressing inability.</p>
-                </figcaption>
-            </div>
-            <div>
-                <figure><img src="images/te.png" alt=""></figure>
-                <figcaption>
-                    <h1>て けい</h1>
-                    <p>The て form (て形, te-kei) is essential verb form in Japanese. It is used to
-                        connect verbs, make requests and form various grammatical structures.
-                        It’s called the て form because all verbs, once conjugated into this form, will end in て
-                        or で. Understanding and mastering the て form is crucial. </p>
-                </figcaption>
-            </div>
+          <div>
+            <figure><img src="images/jisho.png" alt="jisho"  /></figure>
+            <figcaption>
+              <h1>じしょ けい</h1>
+              <p>
+                The じしょ form (辞書形, jisho-kei), also known as the
+                dictionary form, is the basic, non-conjugated form of a verb in
+                Japanese. It is called the dictionary form because it is how
+                verbs are listed in dictionaries. This form is neutral and can
+                be used in casual speech, typically in informal situations with
+                friends, family, or peers
+              </p>
+            </figcaption>
+          </div>
+          <div>
+            <figure><img src="images/nai.png" alt="" /></figure>
+            <figcaption>
+              <h1>ない けい</h1>
+              <p>
+                The ない form (ない形, nai-kei) is the negative form of a verb
+                in Japanese, used to express the idea of "not doing" something
+                or the absence of an action. It’s an informal way to negate a
+                verb and is often used in casual conversation or when forming
+                other grammatical structures, such as commands, prohibitions, or
+                expressing inability.
+              </p>
+            </figcaption>
+          </div>
+          <div>
+            <figure><img src="images/te.png" alt="" /></figure>
+            <figcaption>
+              <h1>て けい</h1>
+              <p>
+                The て form (て形, te-kei) is essential verb form in Japanese.
+                It is used to connect verbs, make requests and form various
+                grammatical structures. It’s called the て form because all
+                verbs, once conjugated into this form, will end in て or で.
+                Understanding and mastering the て form is crucial.
+              </p>
+            </figcaption>
+          </div>
         </section>
+        <!--second line of the 3 form-->
         <section class="form">
-            <div>
-                <figure><img src="images/ta.png" alt=""></figure>
-                <figcaption>
-                    <h1>た けい</h1>
-                    <p>The た form (た形, ta-kei) is the past tense form of a verb in Japanese. It is used to indicate
-                         actions or events that have already been completed, similar to the English past tense.
-                          The た form is essential for expressing past events, experiences, and states.</p>
-                </figcaption>
-            </div>
-            <div>
-                <figure><img src="images/masu.png" alt=""></figure>
-                <figcaption>
-                    <h1>ます けい</h1>
-                    <p>The ます form (ます形, masu-kei) is a polite verb form in Japanese used to indicate respect
-                         and formality, making it suitable for formal or respectful conversations. This form is
-                          typically used in polite speech when addressing superiors, strangers, or in any situation
-                           where respect is required.</p>
-                </figcaption>
-            </div>
-            <div>
-                <figure><img src="images/tai.png" alt=""></figure>
-                <figcaption>
-                    <h1>たい けい</h1>
-                    <p>The たい form (たい形, tai-kei) is a conjugation used to express desire or want to do something
-                         in Japanese. It translates to "want to [verb]" in English and is commonly used in both
-                         informal and formal conversations.</p>
-                </figcaption>
-            </div>
+          <div>
+            <figure><img src="images/ta.png" alt=""  /></figure>
+            <figcaption>
+              <h1>た けい</h1>
+              <p>
+                The た form (た形, ta-kei) is the past tense form of a verb in
+                Japanese. It is used to indicate actions or events that have
+                already been completed, similar to the English past tense. The
+                た form is essential for expressing past events, experiences,
+                and states.
+              </p>
+            </figcaption>
+          </div>
+          <div>
+            <figure><img src="images/masu.png" alt="" /></figure>
+            <figcaption>
+              <h1>ます けい</h1>
+              <p>
+                The ます form (ます形, masu-kei) is a polite verb form in
+                Japanese used to indicate respect and formality, making it
+                suitable for formal or respectful conversations. This form is
+                typically used in polite speech when addressing superiors,
+                strangers, or in any situation where respect is required.
+              </p>
+            </figcaption>
+          </div>
+          <div>
+            <figure><img src="images/tai.png" alt="" /></figure>
+            <figcaption>
+              <h1>たい けい</h1>
+              <p>
+                The たい form (たい形, tai-kei) is a conjugation used to express
+                desire or want to do something in Japanese. It translates to
+                "want to [verb]" in English and is commonly used in both
+                informal and formal conversations.
+              </p>
+            </figcaption>
+          </div>
         </section>
-       </div>
+      </div>
     </main>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
