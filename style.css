@@ -1,48 +1,84 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+/* Avoid horizontal overflow */
+body, html {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+body {
     height: 100vh;
     width: 100vw;
+    font-family: Arial, sans-serif;
 }
-header{
+
+/* Set up flex containers */
+header, #intro, .content {
     display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap */
+    overflow: hidden; /* Prevent overflow */
+}
+
+header {
     justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
 }
-#logo{
-    display: flex;
+
+#logo {
     margin: 10px;
-    margin-left: 20px;
 }
-.li{
-    font-size:20px ;
+
+#logo figure {
+    display: flex;
+    align-items: center;
+}
+
+#logo p{
+    width: 500px;
+}
+
+/* Navigation links */
+.li {
+    font-size: 20px;
     color: black;
     text-decoration: none;
     margin: 20px;
+    transition: color 0.3s;
 }
-#intro{
-    display: flex;
+
+.li:hover {
+    color: #FFC107;
+}
+
+/* Intro section */
+#intro {
+    
+    justify-content: space-around;
     margin-top: 120px;
     margin-bottom: 100px;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
-#feature{
+
+#intro p{
+    width: 500px;
+}
+#feature {
     display: flex;
     justify-content: space-around;
     margin-top: 70px;
 }
-nav{
+
+nav {
     display: flex;
+    align-items: center;
     margin-right: 130px;
     margin-top: 20px;
 }
-#Intro_content{
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
+
+/* Clip path section styling */
 .wave-clip-path {
     height: 400px;
     position: relative;
@@ -52,38 +88,135 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden; /* Prevent overflow */
 }
 
 .content {
+    width: 100vw;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
 }
-.next{
+.content section,p{
+    width: 30%;
+}
+
+.next {
     text-decoration: none;
     color: white;
     background-color: black;
     font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
-.container{
-    background-color: black;
-    width: 100px;
-    height: 30px;
+
+.next:hover {
+    background-color: #FFC107;
+}
+.start{
+    border: 1px solid black;
+    width: 120px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 7%;
+    border-radius: 7px;
+    background-color: #FFC107;
+}
+.start>a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+#st{
     margin-top: 50px;
+    background-color: black;
 }
-#start{
-    background-color: #FFC107;
-    border: 1px solid;
-    margin-top: 20px;
-    color: black;
-    margin-left: 10px;
+#st>a{
+    color: white;
 }
-#start_nav{
+#st:hover{
     background-color: #FFC107;
+    transition-duration: 0.3s;
+}
+#st>a:hover{
     color: black;
+    transition-duration: 0.3s;
+}
+/* Question container */
+#q_container {
+    width: 100vw;
+    margin-left: 20%;
+    margin-top: 150px;
+}
+
+#q_container>p {
+    width: 70%;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+#q_container>h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1098px) {
+    .wave-clip-path {
+        height: 500px; /* Increase height on smaller screens */
+    }
+    .content>p{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .wave-clip-path {
+        height: 1000px; /* Further increase height on very small screens */
+    }
+    .content{
+        display: inline;
+    }
+    .content p,h1{
+        width: 80%;
+    }
+    #intro p,h1{
+        width: 200px;
+        margin-left: 20px;
+    }
+    #home{
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.form img{
+    width: 224px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 5px;
+}
+.form h1{
+    text-align: center;
+    font-size: 25px;
+}
+.form p{
+   width: 224px;
+   margin-top: 20px;
+   text-align: justify;
+}
+picture img{
+    border-radius: 10%;
+    box-shadow: 1px 1px 5px;
 }
