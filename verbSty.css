@@ -1,0 +1,169 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#logo {
+    display: flex;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a,
+#Contact a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+nav>a:hover {
+    color: #FFBF23;
+    transition-duration: 1s;
+}
+
+.start {
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    margin-right: 50px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBF23;
+    border-radius: 10px;
+}
+
+.start a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.search {
+    height: 40px;
+    width: 10%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -45px;
+    border: 2px solid #FFBF23;
+}
+
+.btn0 {
+    height: 40px;
+    width: 5%;
+    outline: none;
+    border: none;
+    background: #FFBF23;
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+}
+
+audio {
+    width: 200px;
+}
+    
+table{
+    position: absolute;
+}
+span{
+    display: none;
+}
+#r1c1{
+    display: inline;
+}
+details{
+    visibility: hidden;
+}
+
+.button-container {
+    width: 100%;
+    position: absolute;
+   /* Adjust this value to move the buttons horizontally */
+    top:950px;/* Center the buttons vertically */
+    background-color: white;
+   
+ /* Stack buttons vertically */
+}
+
+#b2{
+    position: relative;
+    left: 82%;
+}
+#b1{
+    position: relative;
+    left: 4%;
+}
+
+.left-button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #FFD7EF;
+    color:black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20%;
+}
+
+
+footer {
+    margin-top: 200px;
+    background-color: #FFBF23
+}
+
+#Contact {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+#s1 {
+    width: 33.3%;
+}
+
+#Contact h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+address {
+    margin-bottom: 25px;
+    text-indent: 10px;
+}
+
+footer #logo {
+    padding-top: 50px;
+}
+
+footer p {
+    line-height: 15px;
+    text-indent: 10px;
+}
+
+footer a {
+    margin-left: 10px;
+}
+

@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .bg-light-yellow {
+    background-color: #FFFACD;
+  }
+  
+  .text-yellow {
+    color: #FFD700;
+  }
+  
+  .card {
+    border: none;
+  }
+  
